@@ -1,0 +1,37 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Table adjustments */
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+th, td {
+  text-align: left;
+}
+thead th {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  /* Filters stack vertically */
+  .filter-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* Table responsive on smaller screens */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
