@@ -12,8 +12,7 @@ function App() {
   const [netIncomeRange, setNetIncomeRange] = useState({ min: "", max: "" });
   const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });
 
-  const API_URL =
-    "https://financialmodelingprep.com/api/v3/income-statement/AAPL?period=annual&apikey=9RFCIEr70qinVpkin81H7mJ42xJ1zQmG";
+  const API_URL =`https://financialmodelingprep.com/api/v3/income-statement/AAPL?period=annual&apikey=${process.env.REACT_APP_API_KEY}`;
 
   useEffect(() => {
     const fetchData = async () => {
