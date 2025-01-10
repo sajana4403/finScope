@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 function App() {
   const [data, setData] = useState([]);
@@ -12,7 +13,7 @@ function App() {
   const [netIncomeRange, setNetIncomeRange] = useState({ min: "", max: "" });
   const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });
 
-  const API_URL =`https://financialmodelingprep.com/api/v3/income-statement/AAPL?period=annual&apikey=${process.env.REACT_APP_API_KEY}`;
+  const API_URL =`https://financialmodelingprep.com/api/v3/income-statement/AAPL?period=annual&apikey=${API_KEY}`;
 
   useEffect(() => {
     const fetchData = async () => {
