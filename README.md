@@ -3,6 +3,9 @@
 
 This project is a React application that fetches and displays financial data for a company using the [Financial Modeling Prep API](https://financialmodelingprep.com/). Users can filter, sort, and view data in a responsive design.
 
+## Live Demo Link
+https://finscope-f12z.onrender.com
+
 ## Features
 - Fetch financial data for a company.
 - Filter by year range, revenue range, and net income range.
@@ -25,8 +28,8 @@ Ensure you have the following installed on your system:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/financial-data-viewer.git
-cd financial-data-viewer
+git clone https://github.com/sajana4403/finScope.git
+cd finScope
 ```
 
 ### 2. Install Dependencies
@@ -42,7 +45,7 @@ npm install
 Create a `.env` file in the root of your project and add the following environment variable:
 
 ```bash
-REACT_APP_API_KEY=your_api_key_here
+VITE  _API_KEY=your_api_key_here
 ```
 
 Replace `your_api_key_here` with your actual API key from [Financial Modeling Prep](https://financialmodelingprep.com/).
@@ -51,7 +54,7 @@ Replace `your_api_key_here` with your actual API key from [Financial Modeling Pr
 
 ### 4. Run the Project
 
-Start the development server:
+Start the development server:    
 
 ```bash
 npm start
