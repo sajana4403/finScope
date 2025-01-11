@@ -166,7 +166,7 @@ function App() {
           {/* Table Section */}
           <table className="table-auto border-collapse border border-gray-300 w-full mt-4">
             <thead>
-              <tr className="bg-gray-100">
+              <tr className="bg-gray-100 text-black">
                 <th
                   className="border border-gray-300 px-4 py-2 cursor-pointer"
                   onClick={() => sortData("date")}
